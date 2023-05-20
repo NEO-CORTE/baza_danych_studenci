@@ -9,7 +9,7 @@ class student
 private:
 	string nazwisko;
 	string imie;
-	int nr_albumu;
+	int nr_albumu = int(5);
 	string grupa;
 	int rok;
 
@@ -35,19 +35,19 @@ public:
 		return os;
 	}
 	friend ofstream& operator << (ofstream& ofs, student& st_out) {
-		ofs  << st_out.nazwisko << st_out.imie << st_out.nr_albumu << st_out.grupa << st_out.rok;
+		ofs  << st_out.nazwisko << " " << st_out.imie << " " << st_out.nr_albumu << " " << st_out.grupa << " " << st_out.rok << endl;
 		return ofs;
 	}
 	friend istream& operator >> (istream& is, student& st_in) {
 		cout << "Nazwisko: " << endl;
 		is >> st_in.nazwisko;
-		cout << " Imie: " << endl;
+		cout << "Imie: " << endl;
 		is >> st_in.imie;
-		cout << " Nr. Albumu: " << endl;
+		cout << "Nr. Albumu: " << endl;
 		is >> st_in.nr_albumu;
-		cout << " Grupa: " << endl;
+		cout << "Grupa: " << endl;
 		is >> st_in.grupa;
-		cout << " Rok: " << endl;
+		cout << "Rok: " << endl;
 		is >> st_in.rok;
 		cout << endl;
 		return is;

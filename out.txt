@@ -1,6 +1,3 @@
-Kowalski
-55
-Nowak
-33
-Nowak
-22
+Nowak Jak 32133 123A 1
+Nowak Jan 21213 123B 2
+Duda Jan 43434 666A 2
