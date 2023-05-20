@@ -32,7 +32,7 @@ int main()
         cout << *it;
     }
 
-    cout << count_if(studenci.begin(), studenci.end(), [=](student st) -> bool {return st.nazwisko == name; });
+    cout << count_if(studenci.begin(), studenci.end(), [=](student st) -> bool {return st.returnNazwisko() == name; });
     file2.close();
 
 }
