@@ -17,7 +17,7 @@ int main()
     student st;
     vector<student> studenci;
     
-    cout << "1 - wprowadz studentow recznie(default)" << endl << "2 - wczytaj z pliku data.txt" << endl << "3 - zapisz do pliku out.txt" << endl <<"4 - Wyswietl studentów (wedlug kryterium - opcje dostepne po wybraniu)" << endl <<"5 - wyjdz z programu" << endl;
+    cout << "1 - wprowadz studentow recznie" << endl << "2 - wczytaj z pliku data.txt" << endl << "3 - zapisz do pliku out.txt" << endl <<"4 - Wyswietl studentów (wedlug kryterium - opcje dostepne po wybraniu)" << endl <<"5 - wyjdz z programu" << endl;
     while (true) {
         cin >> option;
         if (option == 1 or option > 5 or option < 1) {
