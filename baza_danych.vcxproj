@@ -128,9 +128,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="baza_danych.cpp" />
-    <ClCompile Include="student.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="additional.h" />
     <ClInclude Include="student.h" />
   </ItemGroup>
   <ItemGroup>

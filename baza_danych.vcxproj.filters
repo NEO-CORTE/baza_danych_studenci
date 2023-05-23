@@ -18,12 +18,12 @@
     <ClCompile Include="baza_danych.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="student.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="student.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="additional.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -3,6 +3,7 @@
 #include <string.h>
 #include <fstream>
 #include <algorithm>
+#include "additional.h"
 using namespace std;
 class student
 {
@@ -31,7 +32,9 @@ public:
 	}
 
 	friend ostream& operator << (ostream& os, student& st_out) {
-		os << "Nazwisko:" << st_out.nazwisko << " Imie: " << st_out.imie << " Nr. Albumu: " << st_out.nazwisko[0] << st_out.imie[0] << st_out.nr_albumu << " Grupa: " << st_out.grupa << " Rok " << st_out.rok;
+		dashes();
+		os << "\u001b[36mNazwisko:" << st_out.nazwisko << "\u001b[34m Imie: " << st_out.imie << "\u001b[32m Nr. Albumu: " << st_out.nazwisko[0] << st_out.imie[0] << st_out.nr_albumu << " \u001b[33mGrupa: " << st_out.grupa << "\u001b[35;1m Rok: " << st_out.rok << endl;
+		dashes();
 		return os;
 	}
 	friend ofstream& operator << (ofstream& ofs, student& st_out) {
